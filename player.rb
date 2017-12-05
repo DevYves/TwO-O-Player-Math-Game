@@ -1,28 +1,17 @@
-class Player
+module MathGame
 
-  # def name
-  #   @name
-  # end
-  #
-  # def name=(new_name)
-  #   @name = new_name
-  # end
+  class Player
 
-  attr_accessor :name
+    attr_accessor :name, :lives
 
-  # def points
-  #   @points
-  # end
+    def initialize(name)
+      @name = name
+      @lives = 3
+    end
 
-  attr_reader :points
-
-  def initialize(name)
-    @name = name
-    @points = 0
+    def lose_life
+      @lives -= 1
+    end
   end
-
-  def award_point
-    @points += 1
-  end
-
 end
+
