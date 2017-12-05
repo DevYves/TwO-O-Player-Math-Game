@@ -6,8 +6,8 @@ module MathGame
     attr_reader :questions
 
     def initialize
-      @num_1 = rand(1..21)
-      @num_2 = rand(1..21)
+      @num_1 = rand(1..10)
+      @num_2 = rand(1..100)
     end
 
     def random_question
